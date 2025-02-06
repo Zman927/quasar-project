@@ -36,9 +36,12 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
+import { onMounted, ref } from 'vue';
+import { useRouter, useRoute } from 'vue-router';
 
+
+
+const $route = useRoute()
 const $router = useRouter()
 // function toDetail(product) {
 //   $router.push({
@@ -103,6 +106,13 @@ const products = ref([
     description: "방한용, 터치 스크린 지원"
   }
 ]);
+
+const category = ref('')
+onMounted(()=>{
+  category.value = $route.query.cat
+  console.log(category.value)
+})
+
 
 </script>
 
