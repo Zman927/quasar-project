@@ -4,7 +4,7 @@
       <div>
         <q-img src="~assets/mainPage.jpg" style="object-fit: cover; width: 100%; height: 820px;"></q-img>
       </div>
-      <q-card flat style="max-width: 940px;">
+      <q-card flat style="max-width: 100vw;">
         <div class=" marquee" style="height: 60px">
           <span class="marquee-text text-bold">
             new PRODUCT OPEN.7% SALES/S PRODUCT ALL VIEW YOUR ITEM!
@@ -107,7 +107,7 @@ const products = ref([
   }
 ]);
 
-const category = ref('')
+const category = ref('')  
 onMounted(()=>{
   category.value = $route.query.cat
   console.log(category.value)

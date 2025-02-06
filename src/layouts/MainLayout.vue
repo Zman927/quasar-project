@@ -12,6 +12,7 @@
           </span>
           <span>
             <q-icon name="shopping_bag" size="md" class="cursor-pointer" @click="goToCart" />
+            
           </span>
           <span>
             <q-btn flat dense icon="menu" @click="onClickMenu"></q-btn>
