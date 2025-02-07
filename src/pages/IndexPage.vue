@@ -40,7 +40,6 @@ import { onMounted, ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 
 
-
 const $route = useRoute()
 const $router = useRouter()
 // function toDetail(product) {
@@ -107,7 +106,7 @@ const products = ref([
   }
 ]);
 
-const category = ref('')  
+const category = ref('')
 onMounted(()=>{
   category.value = $route.query.cat
   console.log(category.value)
